@@ -7,7 +7,6 @@
     <title>All Inclusive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!-- Favicon -->
     <link rel="icon" href="img/icone.jpeg" type="icon">
 
@@ -42,12 +41,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                        <li class="nav-item"><a class="btn btn-primary login-btn" href="#create-account">Login</a>
+                        <li class="nav-item">
+                            <a class="btn btn-primary login-btn" href="#create-account">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +71,7 @@
                 <h1>Bem-Vindos</h1>
                 <p>
                     Nesse site você vai encontrar 
-                    <span id="typed-text" class="typed-blue"></span>
+                    <span class="typed" data-typed-items="Dev, Artist, Designer"></span>
                 </p>
             </div>
         </section> <!-- Fim hero-->
@@ -110,18 +110,20 @@
             <div class="row">
                 <div class="col-md-4">
                     <i class="bi bi-laptop"></i>
-                    <h4>Desenvolvimento Web</h4>
-                    <p>Criação de sites responsivos e personalizados.</p>
+                    <h4>Consultoria de Inclusão e Acessibilidade</h4>
+                    <p> Auxiliamos as empresas na adaptação de ambientes e práticas de trabalho para receber adequadamente esses profissionais, criando um ambiente inclusivo e acolhedor.</p>
                 </div>
                 <div class="col-md-4">
                     <i class="bi bi-phone"></i>
-                    <h4>Aplicativos Mobile</h4>
-                    <p>Desenvolvimento de aplicativos nativos e híbridos.</p>
+                    <h4>Divulgação de Oportunidades Inclusivas</h4>
+                    <p>Publicamos e promovemos vagas destinadas a candidatos que, por diferentes motivos, não têm fácil acesso ao mercado de trabalho tradicional, incentivando um processo seletivo mais justo.
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <i class="bi bi-cloud-check"></i>
-                    <h4>Soluções em Nuvem</h4>
-                    <p>Armazenamento seguro e escalável para suas necessidades.</p>
+                    <h4>Banco de Talentos Inclusivo</h4>
+                    <p> Empresas têm acesso a um banco de currículos de pessoas que enfrentam barreiras de inclusão, possibilitando uma seleção mais equitativa e diversificada.
+                    </p>
                 </div>
             </div>
         </div>
@@ -134,9 +136,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="portfolio-item">
-                        <img src="img/img5.jpg" class="img-fluid" alt="Projeto 1">
+                        <img src="" class="img-fluid" alt="Projeto 1">
                         <div class="overlay">
-                            <h3>Projeto 1</h3>
+                            <h3>Inclusão e Acessibilidade</h3>
                             <p>Descrição do projeto.</p>
                         </div>
                     </div>
@@ -166,40 +168,33 @@
     </section>
 
     <!-- Comentario -->
-<section id="testimonials" class="py-5 bg-light">
-    <div class="container text-center">
-        <h2 class="mb-5">O que nossos clientes dizem</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="testimonial">
-                    <img src="img/perfil1.jpg" alt="Foto1" class="testimonial-img">
-                    <h5>Cliente 1</h5>
-                    <small>Enviado em: 10/08/2024</small>
-                    <p>"Excelente trabalho, superou nossas expectativas!"</p>
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">O que nossos clientes dizem</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Excelente Site, superou minhas expectativas!"</p>
+                        <h5>Cliente 1</h5>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="testimonial">
-                    <img src="img/perfil2.jpg" alt="Foto2" class="testimonial-img">
-                    <h5>Cliente 2</h5>
-                    <small>Enviado em: 12/10/2024</small>
-                    <p>"Profissionais de altíssima qualidade e atendimento excepcional."</p>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Site de altissíma qualidade!"</p>
+                        <h5>Cliente 2</h5>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="testimonial">
-                    <img src="" alt="Foto3" class="testimonial-img">
-                    <h5>Cliente 3</h5>
-                    <small>Enviado em: 15/10/2024</small>
-                    <p>"Serviço rápido e eficiente. Recomendo a todos!"</p>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Através deste site, consegui ingressar em uma empresa acessível. Recomendo a todos!"</p>
+                        <h5>Cliente 3</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <div class="create-account-section" id="create-account">
         <div class="login-container">
@@ -238,9 +233,9 @@
                 </div>
                 <div class="col-md-6">
                     <h2>Endereço</h2>
-                    <p>Vila Missionaria, 597 - São Paulo, SP</p>
+                    <p>Rua Exemplo, 123 - Cidade, Estado</p>
                     <h2>Telefone</h2>
-                    <p>(55) 11 98766-4076</p>
+                    <p>(55) 99999-9999</p>
                     <h2>E-mail</h2>
                     <p>allinclusive@gmail.com</p>
                 </div>
@@ -253,9 +248,8 @@
         <div class="container text-center">
             <p>© 2024 All Inclusive - Todos os Direitos Reservados</p>
             <div class="social-icons">
-                <a href="https://pt-br.facebook.com/" class="mx-2"><i class="bi bi-facebook"></i></a>
 
-                <a href="https://www.instagram.com/" class="mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/all1nclusive._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="mx-2"><i class="bi bi-instagram"></i></a>
 
                 <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" class="mx-2"><i
                         class="bi bi-linkedin"></i></a>
@@ -264,8 +258,6 @@
     </footer>
 
     <script src="Js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
 </body>
 
 </html>
