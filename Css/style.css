@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* Variaveis das Cores */
 /* TEMA DARK */
 :root, :root[data-theme='dark'] {
@@ -119,17 +121,20 @@ nav .nav-link:hover {
 }
 
 #banner h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     z-index: 1; /* Garante que o texto do cabeçalho esteja acima */
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #banner p {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 1px;
     z-index: 1; /* Garante que o parágrafo esteja acima */
     position: relative; /* Para que z-index funcione */
     color: #efefef; /* Texto claro */
 }
+
+
 /* Sobre */
 #about {
     padding: 100px 0;
@@ -153,6 +158,11 @@ nav .nav-link:hover {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: var(--cor-texto-sobre);
+}
+
+/* Estilo para o texto animado em azul claro */
+#typed-text.typed-blue {
+    color: #00bbf9; /* Azul claro */
 }
 
 /* Serviços */
@@ -195,9 +205,11 @@ nav .nav-link:hover {
     margin-bottom: 30px;
 }
 
-.portfolio-item img {
-    width: 100%;
-    transition: transform 0.5s ease;
+.testimonial-img {
+    width: 100px; /* Aumente para o tamanho desejado */
+    height: 100px; /* Aumente para o tamanho desejado */
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .portfolio-item:hover img {
@@ -242,18 +254,34 @@ nav .nav-link:hover {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial-img {
+    width: 100px !important; /* Aumente para o tamanho desejado */
+    height: 100px !important; /* Aumente para o tamanho desejado */
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.testimonial small {
+    display: block;
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 15px;
 }
 
 .testimonial p {
     font-size: 1.1rem;
     color: #555;
-}
-
-.testimonial h5 {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #333;
-    font-weight: 700;
+    margin-top: 15px;
 }
 
 /* Contato */

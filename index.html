@@ -7,6 +7,7 @@
     <title>All Inclusive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <!-- Favicon -->
     <link rel="icon" href="img/icone.jpeg" type="icon">
 
@@ -41,13 +42,12 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link active" href="home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                        <li class="nav-item">
-                            <a class="btn btn-primary login-btn" href="#create-account">Login</a>
+                        <li class="nav-item"><a class="btn btn-primary login-btn" href="#create-account">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +71,7 @@
                 <h1>Bem-Vindos</h1>
                 <p>
                     Nesse site você vai encontrar 
-                    <span class="typed" data-typed-items="Dev, Artist, Designer"></span>
+                    <span id="typed-text" class="typed-blue"></span>
                 </p>
             </div>
         </section> <!-- Fim hero-->
@@ -166,33 +166,40 @@
     </section>
 
     <!-- Comentario -->
-    <section id="testimonials" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-5">O que nossos clientes dizem</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Excelente trabalho, superou nossas expectativas!"</p>
-                        <h5>Cliente 1</h5>
-                    </div>
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">O que nossos clientes dizem</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <img src="img/perfil1.jpg" alt="Foto1" class="testimonial-img">
+                    <h5>Cliente 1</h5>
+                    <small>Enviado em: 10/08/2024</small>
+                    <p>"Excelente trabalho, superou nossas expectativas!"</p>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Profissionais de altíssima qualidade e atendimento excepcional."</p>
-                        <h5>Cliente 2</h5>
-                    </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <img src="img/perfil2.jpg" alt="Foto2" class="testimonial-img">
+                    <h5>Cliente 2</h5>
+                    <small>Enviado em: 12/10/2024</small>
+                    <p>"Profissionais de altíssima qualidade e atendimento excepcional."</p>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Serviço rápido e eficiente. Recomendo a todos!"</p>
-                        <h5>Cliente 3</h5>
-                    </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <img src="" alt="Foto3" class="testimonial-img">
+                    <h5>Cliente 3</h5>
+                    <small>Enviado em: 15/10/2024</small>
+                    <p>"Serviço rápido e eficiente. Recomendo a todos!"</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <div class="create-account-section" id="create-account">
         <div class="login-container">
@@ -231,9 +238,9 @@
                 </div>
                 <div class="col-md-6">
                     <h2>Endereço</h2>
-                    <p>Rua Exemplo, 123 - Cidade, Estado</p>
+                    <p>Vila Missionaria, 597 - São Paulo, SP</p>
                     <h2>Telefone</h2>
-                    <p>(55) 99999-9999</p>
+                    <p>(55) 11 98766-4076</p>
                     <h2>E-mail</h2>
                     <p>allinclusive@gmail.com</p>
                 </div>
@@ -246,17 +253,19 @@
         <div class="container text-center">
             <p>© 2024 All Inclusive - Todos os Direitos Reservados</p>
             <div class="social-icons">
-                <a href="https://pt-br.facebook.com/" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://pt-br.facebook.com/" class="mx-2"><i class="bi bi-facebook"></i></a>
 
-                <a href="https://www.instagram.com/" class="mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/" class="mx-2"><i class="bi bi-instagram"></i></a>
 
                 <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" class="mx-2"><i
-                        class="fab fa-linkedin-in"></i></a>
+                        class="bi bi-linkedin"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
 </body>
 
 </html>
