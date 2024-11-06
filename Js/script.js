@@ -34,7 +34,7 @@ accordionHeaders.forEach( header => {
     // Configuração do Typed.js
     document.addEventListener("DOMContentLoaded", function () {
         var typed = new Typed("#typed-text", {
-            strings: ["Emprego", "Oportunidades", "Respeito"],
+            strings: ["Preparo", "Oportunidades", "Respeito"],
             typeSpeed: 100,
             backSpeed: 50,
             backDelay: 1500,
