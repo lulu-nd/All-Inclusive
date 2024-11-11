@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Simples</title>
+    <title>Chat WhatsApp Simples</title>
 
      <!-- Favicon -->
      <link rel="icon" href="img/icone.jpeg" type="icon">
@@ -21,61 +21,109 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+
      <!-- Header com Menu e Logo -->
-    <header class="header fixed-top">
+     <header class="header fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand mx-auto" href="#">
+            <div class="ccontainer">
+                <a class="navbar-brand mx-auto" href="">
                     <img src="img/All Inclusive.png" alt="Logo" class="logo">
                 </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="https://lulu-nd.github.io/All-Inclusive/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#banner">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                        <li class="nav-item"><a class="btn btn-primary login-btn" href="https://lulu-nd.github.io/All-Inclusive/">Sair</a></li>
+                        <li class="nav-item"><a class="btn btn-primary login-btn" href="#create-account">Login</a></li>
                     </ul>
                 </div>
+
+                <!-- icone -->
                 <div class="header-toggle">
-                    <i id="toggleTheme" class="bi bi-sun"></i>
+                    <i id="toggleTheme" class="bi bi-sun"> </i>
                 </div>
             </div>
+            
         </nav>
+
+        
     </header>
 
-    <!-- Seção de Chat -->
-    <section class="bd">
-        <div class="chat-container">
-            <div class="chat-box" id="chatBox">
-                <!-- Mensagens do chat aparecerão aqui -->
+    
+     <!-- Contêiner Principal -->
+     <div class="container">
+        <!-- Lista de Contatos -->
+        <div class="contacts">
+            <div class="contact">
+                <img src="https://via.placeholder.com/50" alt="Foto de Contato" class="contact-photo">
+                <div class="contact-name">Contato 1</div>
             </div>
+            <div class="contact">
+                <img src="https://via.placeholder.com/50" alt="Foto de Contato" class="contact-photo">
+                <div class="contact-name">Contato 2</div>
+            </div>
+            <div class="contact">
+                <img src="https://via.placeholder.com/50" alt="Foto de Contato" class="contact-photo">
+                <div class="contact-name">Contato 3</div>
+            </div>
+
+            <div class="contact">
+                <img src="https://via.placeholder.com/50" alt="Foto de Contato" class="contact-photo">
+                <div class="contact-name">Contato 3</div>
+            </div>
+
+            <div class="contact">
+                <img src="https://via.placeholder.com/50" alt="Foto de Contato" class="contact-photo">
+                <div class="contact-name">Contato 3</div>
+            </div>
+
+            <div class="contact">
+                <img src="https://via.placeholder.com/50" alt="Foto de Contato" class="contact-photo">
+                <div class="contact-name">Contato 3</div>
+            </div>
+            <!-- Adicione mais contatos conforme necessário -->
+        </div>
+
+        <!-- Caixa de Chat -->
+        <div class="chat">
+            <!-- Cabeçalho do Chat -->
+            <div class="chat-header">
+                <img src="https://via.placeholder.com/50" alt="Foto do Contato" class="chat-photo">
+                <span class="chat-name">Nome do Contato</span>
+            </div>
+
+            <!-- Caixa de Mensagens -->
+            <div class="messages" id="messages">
+                <div class="message received">
+                    <p>Olá! Como posso ajudar você?</p>
+                </div>
+                <div class="message sent">
+                    <p>Oi! Gostaria de saber mais sobre os serviços.</p>
+                </div>
+                <!-- Mais mensagens podem ser adicionadas dinamicamente -->
+            </div>
+
+            <!-- Caixa de Entrada de Mensagem -->
             <div class="input-box">
-                <!-- Campo para digitar a mensagem -->
                 <input type="text" id="messageInput" placeholder="Digite sua mensagem..." onkeydown="if(event.key === 'Enter'){sendMessage()}">
-                
-                <!-- Botão para enviar -->
                 <button onclick="sendMessage()">Enviar</button>
             </div>
         </div>
-    </section>
-
-    <!-- Comentários -->
-    <div class="comment-list">
-        <p><strong>Usuário 1:</strong> A Natura é uma empresa totalmente acessível e inclusiva. <br> É muito bom saber que existem empresas como ela que busca o melhor para seus funcionários.</p>
-        <p><strong>Usuário 2:</strong> Na Natura, pude ver de perto o compromisso com a inclusão e acessibilidade, tanto nos produtos quanto no ambiente de trabalho, sempre priorizando a diversidade e igualdade de oportunidades.</p>
     </div>
-    <button id="ver-mais-btn">Ver Mais Comentários</button>
-
+    
     <!-- Footer -->
     <footer>
         <p>© 2024 All Inclusive - Todos os direitos reservados.</p>
     </footer>
 
-<script src="js/scipt.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
